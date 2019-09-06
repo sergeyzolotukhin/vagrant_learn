@@ -30,3 +30,9 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### Logging
+*.log
+
+### Vargant
+.vagrant/
