@@ -4,6 +4,7 @@
 Vagrant.configure("2") do |config|
     config.vm.define "database" do |d|
         d.vm.box = "ubuntu/bionic64"
+        d.vm.provision :shell, path: "database_provision.sh"
         d.vm.provider "virtualbox" do |vb|
             vb.name = "database"
             vb.gui = true
